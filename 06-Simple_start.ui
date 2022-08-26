@@ -1,0 +1,156 @@
+{
+    "ClientConfiguration": {
+        "ConfigurationName": "06-Simple_start",
+        "ConfigurationDescription": "conf SimpleUI",
+        "ConfigurationVersion": "0.0.1",
+        "Processes": [
+            {
+                "type": "Process",
+                "ProcessName": "New proc",
+                "PlanFactHeader": "Plan-Fact",
+                "DefineOnBackPressed": false,
+                "hidden": false,
+                "login_screen": false,
+                "SC": false,
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "Menu-1",
+                        "Timer": false,
+                        "hideToolBarScreen": false,
+                        "noScroll": false,
+                        "handleKeyUp": false,
+                        "noConfirmation": false,
+                        "hideBottomBarScreen": false,
+                        "onlineOnStart": false,
+                        "send_when_opened": false,
+                        "onlineOnInput": false,
+                        "DefOnlineOnCreate": "",
+                        "DefOnlineOnInput": "",
+                        "DefOnCreate": "sample1_on_create",
+                        "DefOnInput": "sample1_on_input",
+                        "Elements": [
+                            {
+                                "Value": "",
+                                "Variable": "",
+                                "type": "LinearLayout",
+                                "weight": "0",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "orientation": "vertical",
+                                "Elements": [
+                                    {
+                                        "type": "TextView",
+                                        "height": "match_parent",
+                                        "width": "match_parent",
+                                        "weight": "0",
+                                        "Value": "A",
+                                        "Variable": "",
+                                        "gravity_horizontal": "center"
+                                    },
+                                    {
+                                        "type": "EditTextNumeric",
+                                        "height": "match_parent",
+                                        "width": "match_parent",
+                                        "weight": "0",
+                                        "Value": "@a",
+                                        "Variable": "a"
+                                    },
+                                    {
+                                        "type": "TextView",
+                                        "height": "match_parent",
+                                        "width": "match_parent",
+                                        "weight": "0",
+                                        "Value": "B",
+                                        "Variable": ""
+                                    },
+                                    {
+                                        "type": "EditTextNumeric",
+                                        "height": "match_parent",
+                                        "width": "match_parent",
+                                        "weight": "0",
+                                        "Value": "@b",
+                                        "Variable": "b"
+                                    },
+                                    {
+                                        "type": "Button",
+                                        "height": "match_parent",
+                                        "width": "match_parent",
+                                        "weight": "0",
+                                        "Value": "sum",
+                                        "Variable": "btn_res"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Menu-2",
+                        "type": "Operation",
+                        "Elements": [],
+                        "Timer": false,
+                        "hideToolBarScreen": false,
+                        "noScroll": false,
+                        "handleKeyUp": false,
+                        "hideBottomBarScreen": false,
+                        "onlineOnStart": false,
+                        "onlineOnInput": false
+                    }
+                ]
+            },
+            {
+                "ProcessName": "Buy",
+                "type": "Process",
+                "Operations": [
+                    {
+                        "Name": "List buy",
+                        "type": "Operation",
+                        "Elements": [
+                            {
+                                "Value": "",
+                                "Variable": "",
+                                "type": "LinearLayout",
+                                "weight": "0",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "orientation": "vertical",
+                                "Elements": [
+                                    {
+                                        "type": "TextView",
+                                        "height": "match_parent",
+                                        "width": "match_parent",
+                                        "weight": "0",
+                                        "Value": "List buy",
+                                        "Variable": ""
+                                    },
+                                    {
+                                        "type": "TableLayout",
+                                        "height": "wrap_content",
+                                        "width": "wrap_content",
+                                        "weight": "0",
+                                        "Value": "@table_buy",
+                                        "Variable": "table_buy"
+                                    }
+                                ]
+                            }
+                        ],
+                        "Timer": false,
+                        "hideToolBarScreen": false,
+                        "noScroll": false,
+                        "handleKeyUp": false,
+                        "hideBottomBarScreen": false,
+                        "onlineOnStart": false,
+                        "onlineOnInput": false
+                    }
+                ]
+            }
+        ],
+        "ConfigurationSettings": {
+            "uid": "db5460a9919242e5b67126552d90a39a"
+        },
+        "ConfigurationTags": "Py,off-line",
+        "PyHandlers": "aW1wb3J0IHVpX2dsb2JhbApmcm9tIHBvbnkub3JtLmNvcmUgaW1wb3J0IGRiX3Nlc3Npb24KZnJvbSBwb255IGltcG9ydCBvcm0KZnJvbSBwb255Lm9ybSBpbXBvcnQgRGF0YWJhc2UsUmVxdWlyZWQsU2V0LHNlbGVjdCxjb21taXQKaW1wb3J0IGpzb24KCmRlZiBzYW1wbGUxX29uX2NyZWF0ZShoYXNoTWFwLF9maWxlcz1Ob25lLF9kYXRhPU5vbmUpOgogICAgaWYgbm90IGhhc2hNYXAuY29udGFpbnNLZXkoImEiKToKICAgICAgICBoYXNoTWFwLnB1dCgiYSIsIiIpICAgIAogICAgaWYgbm90IGhhc2hNYXAuY29udGFpbnNLZXkoImIiKToKICAgICAgICBoYXNoTWFwLnB1dCgiYiIsIiIpICAgICAgICAKICAgIHJldHVybiBoYXNoTWFwCgpkZWYgc2FtcGxlMV9vbl9pbnB1dChoYXNoTWFwLF9maWxlcz1Ob25lLF9kYXRhPU5vbmUpOgogICAgaWYgaGFzaE1hcC5nZXQoImxpc3RlbmVyIik9PSJidG5fcmVzIjoKICAgICAgICBoYXNoTWFwLnB1dCgidG9hc3QiLHN0cihpbnQoaGFzaE1hcC5nZXQoImEiKSkraW50KGhhc2hNYXAuZ2V0KCJiIikpKSkKICAgIAogICAgIyBxdWVyeSA9IHNlbGVjdChjIGZvciBjIGluIHVpX2dsb2JhbC5SZWNvcmQpCiAgICAjIHJvd3M9W10KICAgICMgZm9yIHJlY29yZCBpbiBxdWVyeToKICAgICMgICAgIHJvd3MuYXBwZW5kKHsiYmFyY29kZSI6cmVjb3JkLmJhcmNvZGUsIm5hbWUiOnJlY29yZC5uYW1lLCJxdHkiOnJlY29yZC5xdHl9KQogICAgIwogICAgIyB0YWJsZVsncm93cyddID1yb3dzCiAgICAjIGhhc2hNYXAucHV0KCJ0YWJsZSIsanNvbi5kdW1wcyh0YWJsZSkpCgogICAgcmV0dXJuIGhhc2hNYXAKIwojIGRlZiBvbl9zdGFydF9hY3RpdmVfY3YoaGFzaE1hcCxfZmlsZXM9Tm9uZSxfZGF0YT1Ob25lKToKIwojICAgICBpbXBvcnQgc3FsaXRlMyAjIFRoaXMgaXMgYW5vdGhlciB3YXkgdG8gd29yayB3aXRoIFNRTAojICAgICBmcm9tIHNxbGl0ZTMuZGJhcGkyIGltcG9ydCBFcnJvcgojICAgICBpbXBvcnQganNvbgojCiMKIyAgICAgI2NyZWF0ZSBjb25uZWN0aW9uIHdpdGggZGF0YWJhc2UKIyAgICAgY29ubj0gTm9uZQojICAgICB0cnk6CiMgICAgICAgICBjb25uID0gc3FsaXRlMy5jb25uZWN0KCcvL2RhdGEvZGF0YS9ydS50cmF2ZWxmb29kLnNpbXBsZV91aS9kYXRhYmFzZXMvU2ltcGxlV01TJykKIyAgICAgZXhjZXB0IEVycm9yIGFzIGU6CiMgICAgICAgICByYWlzZSBWYWx1ZUVycm9yKCfQndC10YIg0YHQvtC10LTQuNC90LXQvdC40Y8g0YEg0LHQsNC30L7QuSEnKQojCiMgICAgIGN1cnNvciA9IGNvbm4uY3Vyc29yKCkKIyAgICAgY3Vyc29yLmV4ZWN1dGUoIlNFTEVDVCBiYXJjb2RlLG5hbWUscXR5IEZST00gUmVjb3JkIikKIwojICAgICByZXN1bHRzID0gY3Vyc29yLmZldGNoYWxsKCkKIwojICAgICBncmVlbl9saXN0ID0gW10KIyAgICAgcmVkX2xpc3Q9IFtdCiMgICAgIGluZm9fbGlzdCA9IFtdCiMgICAgIGZvciBsaW5rIGluIHJlc3VsdHM6CiMgICAgICAgICBqb2IgPSB7Im9iamVjdCI6c3RyKGxpbmtbMF0pLCJpbmZvIjpzdHIobGlua1sxXSkrIiA8L24+INCe0YHRgtCw0YLQvtC6OiA8YmlnPiIrc3RyKGxpbmtbMl0pKyI8L2JpZz4ifQojICAgICAgICAgaW5mb19saXN0LmFwcGVuZChqb2IpCiMgICAgICAgICBncmVlbl9saXN0LmFwcGVuZChsaW5rWzBdKQojCiMgICAgIGNvbm4uY2xvc2UoKQojCiMgICAgIGhhc2hNYXAucHV0KCJvYmplY3RfaW5mb19saXN0Iixqc29uLmR1bXBzKGluZm9fbGlzdCxlbnN1cmVfYXNjaWk9RmFsc2UpKQojICAgICBoYXNoTWFwLnB1dCgiZ3JlZW5fbGlzdCIsJzsnLmpvaW4oZ3JlZW5fbGlzdCkpCiMKIyAgICAgcmV0dXJuIGhhc2hNYXA=",
+        "RunPython": true,
+        "PyFiles": []
+    }
+}
